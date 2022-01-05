@@ -70,3 +70,9 @@
       background-color: steelblue;
       color: white;
   }
+  @media screen and (max-width:650px) {
+    .up{
+      margin-bottom: 50px;
+    }
+  }
+  
