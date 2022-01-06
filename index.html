@@ -15,7 +15,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
         <div class="container">
-          <a class="navbar-brand text-white" href="index.html">e<span style="color: red;">M</span>ark</a>
+          <a class="navbar-brand text-white" href="index.html">e<span style="color: red;">M</span>art</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,16 +35,17 @@
                   Service
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Refund</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Chat</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Contact</a></li>
                 </ul>
               </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success text-white" type="submit">Search</button>
+              <button class="btn btn-outline-success text-white" type="submit"><i class="fa fa-search"></i></button>
             </form>
           </div>
         </div>
@@ -96,26 +97,56 @@
   <!-- start sidebar-->
         <div class="container">
             <div class="row margin-top">
-            <div class="col-md-3">
+              <div class="col-md-3">
                 <div class="list-group category">
-                    <a href="electric.html" class="list-group-item list-group-item-action">Electronic Devices</a>
-                    <a href="electronic.html" class="list-group-item list-group-item-action">Electronic Accessories</a>
-                    <a href="baby.html" class="list-group-item list-group-item-action">Babies & Toys</a>
-                    <a href="#" class="list-group-item list-group-item-action">Health & Beauty</a>
-                    <a href="women.html" class="list-group-item list-group-item-action">Women's Fashiony</a>
-                    <a href="man.html" class="list-group-item list-group-item-action">Men's Fashion</a>
-                    <a href="#" class="list-group-item list-group-item-action">Groceries & Pets</a>
-                    <a href="#" class="list-group-item list-group-item-action">Home & Lifestyle</a>
-                    <a href="#" class="list-group-item list-group-item-action">Watches & Accessories</a>
-                    <a href="#" class="list-group-item list-group-item-action">Sports & Outdoor</a>
-                  </div>
-            </div>
+                  <ul class="list-group sub_menu">
+                    <li class="list-group-item"><a href="electric.html" class="list-group-item list-group-item-action">Electronic Devices</a>
+                      <ul class="sub ">
+                        <li><a class="list-group-item list-group-item-action" href="#">Mobile</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="#">Computer And Laptop</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="#">Cable And Accessoried</a></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item"><a href="electronic.html" class="list-group-item list-group-item-action">Electronic Accessories</a></li>
+                    <li class="list-group-item"><a href="baby.html" class="list-group-item list-group-item-action">Babies & Toys</a></li>
+                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action">Health & Beauty</a></li>
+                    <li class="list-group-item"><a href="women.html" class="list-group-item list-group-item-action">Women's Fashiony</a></li>
+                    <li class="list-group-item"><a href="man.html" class="list-group-item list-group-item-action">Men's Fashion</a>
+                      <ul class="sub">
+                        <li><a class="list-group-item list-group-item-action" href="#">Action</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="#">Another action</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action">Groceries & Pets</a></li>
+                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action">Home & Lifestyle</a></li>
+                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action">Watches & Accessories</a></li>
+                    <li class="list-group-item"><a href="#" class="list-group-item list-group-item-action">Sports & Outdoor</a>
+                      <ul class="sub ">
+                        <li><a class="list-group-item list-group-item-action" href="#">Action</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="#">Another action</a></li>
+                        <li><a class="list-group-item list-group-item-action" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="list-group-item">
+                      <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Category" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                        </div>
+                      </nav>
+                    </li>
+                  </ul>
+                </div>
+            </div> 
              <!-- end sidebar-->
             <div class="col-md-9">
                 <!--Start Product Section-->
                     <h2>Feature Product</h2>
                     <div class="row">
-                        <div class="col-md-3 product_img">
+                        <div class="col-md-4 product_img">
                           <div class="product">
                           <img src="image/product/1.jpg" alt="Avatar" class="image">
                           <h5>Women Fashion</h5>
@@ -130,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 product_img">
+                    <div class="col-md-4 product_img">
                       <div class="product">
                       <img src="image/product/man1.png" alt="Avatar" class="image">
                       <h5>Man Fashion</h5>
@@ -145,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 product_img">
+                <div class="col-md-4 product_img">
                   <div class="product">
                   <img src="image/product/baby1.jpg" alt="Avatar" class="image">
                   <h5>Baby Fashion</h5>
@@ -160,7 +191,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col-md-3 product_img">
+              <div class="col-md-4 product_img">
                   <div class="product">
                   <img src="image/product/m1.png" alt="Avatar" class="image">
                   <h5>Electronic</h5>
@@ -175,7 +206,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col-md-3 product_img">
+              <div class="col-md-4 product_img">
                   <div class="product">
                   <img src="image/product/led3.png" alt="Avatar" class="image">
                   <h5>Electric</h5>
@@ -190,13 +221,91 @@
                     </div>
                 </div>
               </div>
-                </div>
-              </div>
+               <!-- Start Top Selling Product-->
+                  <h2 style="padding-top: 20px; padding-bottom: 20px;">Top Selling Product</h2>
+                    <div class="row">
+                      <div class="col-md-4 product_img">
+                        <div class="product">
+                          <img src="image/product/m1.png" alt="Avatar" class="image">
+                            <h5>Women Fashion</h5>
+                              <div class="overlay">
+                                  <div class="product_text">
+                                      <h5>Women Fashion</h5> 
+                                      <p>Lorem ipsum dolor sit amet,  at iusto nesciunt no at iusto nesciunt nobis tempore</p>
+                                      <footer >
+                                        <div class="row down">
+                                          <div class="col-md-6 product_button position-absolute bottom-0 end-0 up"> <a href="single.html"><button class="btn btn-primary">Details</button></a></div>
+                                          <div class="col-md-6 product_button position-absolute bottom-0 start-0 "> <button class="btn btn-primary">Add Cart</button></div>
+                                        </div>
+                                      </footer>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 product_img">
+                          <div class="product">
+                            <img src="image/product/led3.png" alt="Avatar" class="image">
+                              <h5>Women Fashion</h5>
+                                <div class="overlay">
+                                    <div class="product_text">
+                                        <h5>Women Fashion</h5> 
+                                        <p>Lorem ipsum dolor sit amet,  at iusto nesciunt no at iusto nesciunt nobis tempore</p>
+                                        <footer >
+                                          <div class="row down">
+                                            <div class="col-md-6 product_button position-absolute bottom-0 end-0 up"> <a href="single.html"><button class="btn btn-primary">Details</button></a></div>
+                                            <div class="col-md-6 product_button position-absolute bottom-0 start-0 "> <button class="btn btn-primary">Add Cart</button></div>
+                                          </div>
+                                        </footer>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4 product_img">
+                            <div class="product">
+                              <img src="image/product/man1.png" alt="Avatar" class="image">
+                                <h5>Women Fashion</h5>
+                                  <div class="overlay">
+                                      <div class="product_text">
+                                          <h5>Women Fashion</h5> 
+                                          <p>Lorem ipsum dolor sit amet,  at iusto nesciunt no at iusto nesciunt nobis tempore</p>
+                                          <footer >
+                                            <div class="row down">
+                                              <div class="col-md-6 product_button position-absolute bottom-0 end-0 up"> <a href="single.html"><button class="btn btn-primary">Details</button></a></div>
+                                              <div class="col-md-6 product_button position-absolute bottom-0 start-0 "> <button class="btn btn-primary">Add Cart</button></div>
+                                            </div>
+                                          </footer>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 product_img">
+                              <div class="product">
+                                <img src="image/product/3.jpg" alt="Avatar" class="image">
+                                  <h5>Women Fashion</h5>
+                                    <div class="overlay">
+                                        <div class="product_text">
+                                            <h5>Women Fashion</h5> 
+                                            <p>Lorem ipsum dolor sit amet,  at iusto nesciunt no at iusto nesciunt nobis tempore</p>
+                                            <footer >
+                                              <div class="row down">
+                                                <div class="col-md-6 product_button position-absolute bottom-0 end-0 up"> <a href="single.html"><button class="btn btn-primary">Details</button></a></div>
+                                                <div class="col-md-6 product_button position-absolute bottom-0 start-0 "> <button class="btn btn-primary">Add Cart</button></div>
+                                              </div>
+                                            </footer>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                    </div>
+<!--End Top Selling-->
             </div>
+          </div>
         </div>
-                <!--End Product Section-->
-                <!-- Footer Start-->
-<footer class="bg-dark text-center text-white">
+    </div>
+      <!--End Product Section-->
+     
+      <!-- Footer Start-->
+<footer class="bg-dark text-center text-white" >
     <!-- Grid container -->
     <div class="container p-4">
       <!-- Section: Social media -->
@@ -267,7 +376,7 @@
     <!-- Grid container -->
   
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.5);">
       © 2022 Copyright:
       <a class="text-white" href="#">eMart.com</a>
     </div>
