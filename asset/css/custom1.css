@@ -1,0 +1,167 @@
+/* start navbar*/
+.brand h1{
+    font-size: 25px;
+    padding: 5px;
+    margin: 0;
+}
+.btn-start{
+    border-radius: 25px;
+    background-color: #f05716;
+}
+.btn-start a{
+    color: white;
+}
+.margin_navbar li{
+    padding: 0px 10px;
+}
+.float_navbar{
+    right: 5px;
+    position: absolute;
+}
+.align_nav{
+    position: relative;
+}
+/* end navbar*/
+/*start Slider*/
+.slider img{
+    width: 100%;
+    padding-top: 100px;
+}
+.slider_text h1{
+    font-size: 60px;
+    padding-top: 60px;
+    color: #4E4039;
+}
+.slider_text h2{
+    font-size: 30px;
+    padding-top: 15px;
+    color: #A08F90;
+}
+.btn_style{
+    background-color: #f05716;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+.btn_margin{
+    padding-top: 20px;
+}
+/*End Slider*/
+/* Start About Section*/
+.about{
+    padding-top: 150px;
+}
+.about_text h3{
+    font-size: 40px;
+    color: #4E4039;
+}
+.about_text1 h4{
+    color: #4E4039;
+}
+/* end about Section*/
+/* start Service Section*/
+.service{
+    padding-top: 50px;
+}
+.service h2{
+    text-align: center;
+}
+.service h1{
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 30px;
+}
+.service_card p{
+    text-align: center;
+}
+.service_card img{
+    width: 50px;
+    text-align: center;
+}
+.service_card h4{
+    text-align: center;
+}
+.service_card h4 a{
+    text-decoration: none;
+}
+/*End Service Section*/
+/*start portfolio Section*/
+.portfolio_section{
+    padding-top: 50px;
+}
+.portfolio_section h2{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #C4B9B4;
+}
+.portfolio_section p{
+    text-align: center;
+    color: #312722;
+    font-size: 30px;
+    font-weight: 700;
+}
+.portfolio_slider{
+    text-align: center;
+   
+}
+.portfolio_section{
+    padding: 20px 0px;
+}
+.portfolio_section a{
+    padding: 0px 10px;
+}
+.portfolio_nav{
+    text-align: center;
+}
+.portfolio_nav li{
+   display: inline-block;
+   text-align: center;
+   list-style: none;
+}
+.portfolio_nav li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+.portfolio_nav li a:hover{
+    color: #EB5D1E;
+}
+.portfolio_img img{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*End portfolio Section*/
+/* start FAQ Section*/
+.faq_section h4{
+    text-align: center;
+    color: #C4B9B4;
+}
+.faq_section h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* End FAQ Section*/
+/* Start Testimonial Section*/
+.team h4{
+    text-align: center;
+    padding-top: 50px;
+    color: #C4B9B4;
+}
+.team h3{
+    text-align: center;
+}
+.team_image{
+    padding-top: 30px;
+}
+.team_img img{
+    width: 100%;
+}
+/* end Testimonial Section*/
+/* contact Section*/
+.contact h4{
+    text-align: left;
+    color: black;
+}
