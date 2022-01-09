@@ -14,12 +14,51 @@
 .margin_navbar li{
     padding: 0px 10px;
 }
+.margin_navbar li:hover{
+    color: white;
+    font-weight: 900;
+    font-family: tahoma;
+    background-color: darkgray;
+}
 .float_navbar{
     right: 5px;
     position: absolute;
 }
+@media screen and (max-width:750px) {
+    .float_navbar{
+        right: 0;
+        position: relative;
+        justify-self: end;
+    }
+}
 .align_nav{
     position: relative;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+}
+@media screen and (max-width:600px) {
+    .dropdown{
+        position: relative;
+    }
+}
+
+.dropdown li{
+    list-style: none;
+    margin: 5px;
+}
+.dropdown li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.float_navbar li:hover .dropdown{
+    display: block;
+    color: black;
+}
+.float_navbar li:hover .dropdown li a{
+    color: darkcyan;
+    
 }
 /* end navbar*/
 /*start Slider*/
@@ -50,6 +89,7 @@
 /* Start About Section*/
 .about{
     padding-top: 150px;
+    padding-bottom: 130px;
 }
 .about_text h3{
     font-size: 40px;
@@ -62,6 +102,11 @@
 /* start Service Section*/
 .service{
     padding-top: 50px;
+    padding-bottom: 130px;
+}
+.hover_service:hover{
+    text-transform:uppercase;
+    transform: scale3d(1.1);
 }
 .service h2{
     text-align: center;
@@ -87,7 +132,8 @@
 /*End Service Section*/
 /*start portfolio Section*/
 .portfolio_section{
-    padding-top: 50px;
+    padding-top: 150px;
+    height: 100%;
 }
 .portfolio_section h2{
     text-align: center;
@@ -158,6 +204,9 @@
 }
 .team_img img{
     width: 100%;
+}
+.team_hover img:hover{
+    transform: scale(1.2);
 }
 /* end Testimonial Section*/
 /* contact Section*/
