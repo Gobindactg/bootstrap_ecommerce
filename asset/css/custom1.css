@@ -24,7 +24,7 @@
     right: 5px;
     position: absolute;
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:992px) {
     .float_navbar{
         right: 0;
         position: relative;
@@ -32,13 +32,15 @@
     }
 }
 .align_nav{
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 2px;
 }
 .dropdown{
     display: none;
     position: absolute;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:990px) {
     .dropdown{
         position: relative;
     }
@@ -84,6 +86,10 @@
 }
 .btn_margin{
     padding-top: 20px;
+}
+.hero_hover img:hover{
+    transform: scale(1.2);
+    
 }
 /*End Slider*/
 /* Start About Section*/
@@ -175,9 +181,20 @@
     color: #EB5D1E;
 }
 .portfolio_img img{
-    width: 100%;
+    width: 80%;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+@media screen and (maz-width:768px){
+    .portfolio_img img{
+        width: 100%;
+    }
+    .team_img img{
+        width: 100%;
+    }
+    .team_img{
+        text-align: center;
+    }
 }
 /*End portfolio Section*/
 /* start FAQ Section*/
@@ -203,7 +220,7 @@
     padding-top: 30px;
 }
 .team_img img{
-    width: 100%;
+    width: 80%;
 }
 .team_hover img:hover{
     transform: scale(1.2);
@@ -214,3 +231,42 @@
     text-align: left;
     color: black;
 }
+.address{
+    padding:20px 5px;
+    margin: 10px 0px;
+    background-color: rgb(253, 247, 247);
+}
+hr.new4 {
+    border: 2px solid rgb(247, 12, 12);
+  }
+  .contact_form{
+      margin: 10px 0px;
+  }
+  .footer_content{
+      padding: 50px 0px;
+      background-color: rgb(230, 225, 225);
+      margin: 20px 0px;
+  }
+  .input_in{
+      background-color: white;
+  }
+  .social_icon a{
+      padding: 10px;
+  }
+  .social_icon a i{
+      width: 20px;
+  }
+  .social_icon a:hover{
+    color: rgb(252, 6, 6);
+    font-weight: 900;
+    font-family: tahoma;
+    background-color: darkgray;
+    }
+  .social_icon{
+      text-align: center;
+  }
+  .copy_right{
+      padding: 20px 0px;
+      background-color: darkgray;
+  }
+ 
