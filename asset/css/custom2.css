@@ -1,0 +1,249 @@
+body {
+    overflow-x: hidden; /* Hide scrollbars */
+  }
+.nav_background{
+    background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("../img/hero-bg.jpg") center top no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.navbar_align ul li a{
+    color: white;
+    font-size: 18px;
+}
+.sub_nav{
+    display: none;
+    position: absolute;
+    padding: 0px 5px;
+}
+.sub_nav li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.sub_nav li a{
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+.nav_hover li a{
+    font-size: 18px;
+    color: white;
+}
+.slider{
+    padding-top: 80px;
+    color: white;
+    position: relative;
+    height: 100vh;
+   
+    background-size: cover;
+    overflow: hidden;
+}
+.slider h2{
+    font-size: 50px;
+    padding: 5px 0px;
+}
+.slider p{
+    font-size: 30px;
+    padding: 5px 0px;
+}
+.get button{
+    border-radius: 40px;
+}
+.product1{
+    position: absolute;
+    overflow: hidden;
+    top: 70%;
+    left: 25%;
+}
+.product2{
+    position: absolute;
+    overflow: hidden;
+    top: 55%;
+    left: 40%;
+}
+.product3{
+    position: absolute;
+    overflow: hidden;
+    top: 45%;
+    left: 55%;
+}
+@media screen and (max-width:768px) {
+    .product1{
+        top: 60%;
+    }
+    .product2 img{
+        display: none;
+    }
+    .product3 img{
+        display: none;
+    }
+}
+.hero h1{
+    color: white;
+    font-size: 30px;
+}
+/* start about section */
+.about{
+    padding-top: 50px;
+}
+hr{
+    width: 70px;
+    margin: 0 auto;
+    height: 12px;
+    color: black;
+
+}
+.divider{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #1dc8cd;
+    background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+.about_img img{
+    width: 100%;
+}
+.about_list{
+    margin: 0;
+    padding: 0px;
+}
+.about_list li{
+    list-style: none;
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+.about_text{
+    padding-top: 50px;
+}
+.text-margin{
+padding: 0px 20px;
+
+}
+.feature_margin{
+    padding-top: 50px;
+}
+.feature{
+    overflow: hidden;
+    height: 450px;
+}
+.margin_advance_feture{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
+.back_color{
+    background-color: gainsboro;
+}
+.feature2{
+    padding-top:50px ;
+    padding-bottom: 30px;
+}
+.feature_img img{
+    width: 100%;
+}
+.call-to-action {
+    overflow: hidden;
+    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/call-to-action-bg.jpg) fixed center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: white;
+  }
+ .btn_style a{
+     padding: 10px 40px;
+     border-radius: 30px;
+     font-size: 20px;
+ }
+ .btn_style{
+     margin-top: 30px;
+ }
+ .more_feature img{
+     width: 100%;
+ }
+ a{
+     text-decoration: none;
+ }
+ .feature-text{
+     padding: 40px 10px;
+     margin: 10px 10px;
+ }
+ .client{
+     padding: 20px 10px;
+ }
+ .client img{
+     width: 100%;
+ }
+ .price_margin{
+     margin: 0px 5px;
+     padding: 10px 0px;
+ }
+ .price_margin h3{
+     padding-top: 20px;
+ }
+ .price_margin h4{
+    font-size: 46px;
+    color: #1dc8cd;
+    font-weight: 300;
+ }
+ .price_margin h4 sup {
+    font-size: 20px;
+    top: -20px;
+  }
+  .price_margin h4 span {
+    color: #bababa;
+    font-size: 20px;
+  }
+  .btn_price{
+        background: #515e61;
+        display: inline-block;
+        padding: 6px 30px;
+        border-radius: 20px;
+        color: #fff;
+        transition: none;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+     
+  }
+  .btn_price1{
+        background: linear-gradient(45deg, #1de099, #1dc8cd);
+        display: inline-block;
+        padding: 6px 30px;
+        border-radius: 20px;
+        color: #fff;
+        transition: none;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+  }
+  .faq_section h4{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.faq_section h3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.faq_text{
+    padding-bottom: 40px;
+}
+.team_text h4{
+    font-size: 30px;
+}
+.team_img img{
+    width: 100%;
+}
+.contact-about h3 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1dc8cd;
+  }
+ 
