@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        <div class="mb-3 " style="padding-top: 50px;">
+            <label for="" class="form-label">Enter Your Mark</label>
+            <input type="number" class="form-control" id="inputMark">
+        </div>
+        <div class="mb-3">
+            <button onclick="myFunction()"  class="btn btn-outline-primary">Submit</button>
+        </div>
+        <div class="container">
+           <h2 id="result" style="color: green;"></h2>
+        </div>
+    </form>
+    </div>
+    <script >
+        function myFunction(){
+        var x = document.getElementById('inputMark').value;
+        if(x>=80){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA A+";
+        }
+        else if(x>=70){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA A";
+        }
+        else if(x>=60){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA A-";
+        }
+        else if(x>=50){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA B";
+        }
+        else if(x>=40){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA C";
+        }
+        else if(x>=33){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA D";
+        }else{
+            document.getElementById("result").innerHTML = "<h1 style='color:red;''> You Have Obtain Mark " + x +". Your Are Fail !!</h1>"
+        }
+        
+        }
+    </script>
+</body>
+</html>

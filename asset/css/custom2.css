@@ -246,4 +246,25 @@ padding: 0px 20px;
     text-transform: uppercase;
     color: #1dc8cd;
   }
+   .sub_menu{
+      display: none;
+      position: absolute;
+  }
+   .sub_menu li{
+      list-style: none;
+      padding: 5px 0px;
+      color: black;
+  }
+  .sub_menu li a{
+      text-decoration: none;
+      color: black;
+  } 
+  .menu_bar li:hover .sub_menu {
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+    background-color: rgb(46, 43, 43);
+    color: black;
+  } 
+
  
