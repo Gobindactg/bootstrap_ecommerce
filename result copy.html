@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+        <div class="mb-2" style="padding-top: 50px;">
+            <label for="" class="form-label">Bangla</label>
+            <input type="number" class="form-control" id="inputMark">
+        </div>
+        <div class="mb-2 ">
+            <label for="" class="form-label">English</label>
+            <input type="number" class="form-control" id="inputMark1">
+        </div>
+        <div class="mb-2 ">
+            <label for="" class="form-label">Math</label>
+            <input type="number" class="form-control" id="inputMark2">
+        </div>
+        <div class="mb-2 ">
+            <label for="" class="form-label">Science</label>
+            <input type="number" class="form-control" id="inputMark3">
+        </div>
+        <div class="mb-2 ">
+            <label for="" class="form-label">Bangladesh and Global Study</label>
+            <input type="number" class="form-control" id="inputMark4">
+        </div>
+        <div class="mb-2 ">
+            <label for="" class="form-label">Religion</label>
+            <input type="number" class="form-control" id="inputMark5">
+        </div>
+        
+        <div class="mb-3">
+            <button onclick="myFunction()"  class="btn btn-outline-primary">Submit</button>
+        </div>
+        <div class="container">
+           <h2 id="result" style="color: green;"></h2>
+        </div>
+    </form>
+    </div>
+    <script >
+        function myFunction(){
+        var x = document.getElementById('inputMark').value;
+        var x1 = document.getElementById('inputMark1').value;
+        var x2 = document.getElementById('inputMark2').value;
+        var x3 = document.getElementById('inputMark3').value;
+        var x4 = document.getElementById('inputMark4').value;
+        var x5 = document.getElementById('inputMark5').value;
+        if(x>=80){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 5.00 and Grade A+";
+        }
+        else if(x>=70){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 4.00 And Grade A";
+        }
+        else if(x>=60){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 3.50 And Grade A-";
+        }
+        else if(x>=50){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 3.00 And Grade B";
+        }
+        else if(x>=40){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 2.00 And Grade C";
+        }
+        else if(x>=33){
+            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 1.00 And Grade D";
+        }else{
+            document.getElementById("result").innerHTML = "<h1 style='color:red;''> You Have Obtain Mark " + x +". Your Are Fail !!</h1>"
+        }
+        
+        }
+    </script>
+</body>
+</html>

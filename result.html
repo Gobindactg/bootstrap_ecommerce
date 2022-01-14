@@ -10,10 +10,35 @@
 <body>
     <div class="container">
         <form action="#">
-        <div class="mb-3 " style="padding-top: 50px;">
-            <label for="" class="form-label">Enter Your Mark</label>
+        <div class="mb-1" style="padding-top: 20px;">
+            <label for="" class="form-label">Student Name</label>
+            <input type="text" class="form-control" id="st_name">
+        </div>
+        <div class="mb-1" >
+            <label for="" class="form-label">Bangla</label>
             <input type="number" class="form-control" id="inputMark">
         </div>
+        <div class="mb-1 ">
+            <label for="" class="form-label">English</label>
+            <input type="number" class="form-control" id="inputMark1">
+        </div>
+        <div class="mb-1 ">
+            <label for="" class="form-label">Math</label>
+            <input type="number" class="form-control" id="inputMark2">
+        </div>
+        <div class="mb-1 ">
+            <label for="" class="form-label">Science</label>
+            <input type="number" class="form-control" id="inputMark3">
+        </div>
+        <div class="mb-1 ">
+            <label for="" class="form-label">Bangladesh and Global Study</label>
+            <input type="number" class="form-control" id="inputMark4">
+        </div>
+        <div class="mb-1 ">
+            <label for="" class="form-label">Religion</label>
+            <input type="number" class="form-control" id="inputMark5">
+        </div>
+        
         <div class="mb-3">
             <button onclick="myFunction()"  class="btn btn-outline-primary">Submit</button>
         </div>
@@ -22,30 +47,184 @@
         </div>
     </form>
     </div>
+    <div class="container">
+        <table class="table table-bordered">
+            <tr class="text-center">
+                <th class="text-start">Name :</th>
+                <th>Bangla</th>
+                <th>English</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>BOB</th>
+                <th>Religion</th>
+                <th>Total Mark</th>
+                <th>Average_mark</th>
+               
+            </tr>
+            <tr class="text-center">
+                <td class="text-start" id="name">Karim Uddin</td>
+                <td id="bangla_mark"></td>
+                <td id="english_mark"></td>
+                <td id="math_mark"></td>
+                <td id="science_mark"></td>
+                <td id="bob_mark"></td>
+                <td id="religion_mark"></td>
+                <td id="total_mark"></td>
+                <td id="avarage_Mark1"></td>
+                
+            </tr>
+        </table>
+    </div>
     <script >
         function myFunction(){
-        var x = document.getElementById('inputMark').value;
+        var name = document.getElementById('st_name').value;
+        var x = Number(document.getElementById('inputMark').value);
+        var x1 = Number(document.getElementById('inputMark1').value);
+        var x2 = Number(document.getElementById('inputMark2').value);
+        var x3 = Number(document.getElementById('inputMark3').value);
+        var x4 = Number(document.getElementById('inputMark4').value);
+        var x5 = Number(document.getElementById('inputMark5').value);
+       
+        var total = Number(x + x1 + x2 + x3 + x4 + x5);
+        var average_mark = total/6;
+        
+        document.getElementById("name").innerHTML = name;
+        document.getElementById("total_mark").innerHTML = total;
+        document.getElementById("avarage_Mark1").innerHTML = average_mark;
+
         if(x>=80){
-            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 5.00 and Grade A+";
+            document.getElementById("bangla_mark").innerHTML = 5;
         }
         else if(x>=70){
-            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 4.00 And Grade A";
+            document.getElementById("bangla_mark").innerHTML = 4;
         }
         else if(x>=60){
-            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 3.50 And Grade A-";
+            document.getElementById("bangla_mark").innerHTML = 3.50;
         }
         else if(x>=50){
-            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 3.00 And Grade B";
+            document.getElementById("bangla_mark").innerHTML =3.00;
         }
         else if(x>=40){
-            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 2.00 And Grade C";
+            document.getElementById("bangla_mark").innerHTML = 2.00;
         }
         else if(x>=33){
-            document.getElementById("result").innerHTML = "You Have Obtain Mark " +  x + ".<br> And Obtain GPA 1.00 And Grade D";
+            document.getElementById("bangla_mark").innerHTML =1.00;
         }else{
-            document.getElementById("result").innerHTML = "<h1 style='color:red;''> You Have Obtain Mark " + x +". Your Are Fail !!</h1>"
+            document.getElementById("bangla_mark").innerHTML = 0;        }
+       
+
+
+
+        if(x1>=80){
+            document.getElementById("english_mark").innerHTML = 5;
         }
-        
+        else if(x1>=70){
+            document.getElementById("english_mark").innerHTML = 4;
+        }
+        else if(x1>=60){
+            document.getElementById("english_mark").innerHTML = 3.50;
+        }
+        else if(x1>=50){
+            document.getElementById("english_mark").innerHTML =3.00;
+        }
+        else if(x1>=40){
+            document.getElementById("english_mark").innerHTML = 2.00;
+        }
+        else if(x1>=33){
+            document.getElementById("english_mark").innerHTML =1.00;
+        }else{
+            document.getElementById("english_mark").innerHTML = 0;        
+        }
+       
+        if(x2>=80){
+            document.getElementById("math_mark").innerHTML = 5;
+        }
+        else if(x2>=70){
+            document.getElementById("math_mark").innerHTML = 4;
+        }
+        else if(x2>=60){
+            document.getElementById("math_mark").innerHTML = 3.50;
+        }
+        else if(x2>=50){
+            document.getElementById("math_mark").innerHTML =3.00;
+        }
+        else if(x2>=40){
+            document.getElementById("math_mark").innerHTML = 2.00;
+        }
+        else if(x2>=33){
+            document.getElementById("math_mark").innerHTML =1.00;
+        }else{
+            document.getElementById("math_mark").innerHTML = 0;        
+        }
+       
+       
+        if(x3>=80){
+            document.getElementById("science_mark").innerHTML = 5;
+        }
+        else if(x3>=70){
+            document.getElementById("science_mark").innerHTML = 4;
+        }
+        else if(x3>=60){
+            document.getElementById("science_mark").innerHTML = 3.50;
+        }
+        else if(x3>=50){
+            document.getElementById("science_mark").innerHTML =3.00;
+        }
+        else if(x3>=40){
+            document.getElementById("science_mark").innerHTML = 2.00;
+        }
+        else if(x3>=33){
+            document.getElementById("science_mark").innerHTML =1.00;
+        }else{
+            document.getElementById("science_mark").innerHTML = 0;        
+        }
+       
+       
+        if(x4>=80){
+            document.getElementById("bob_mark").innerHTML = 5;
+        }
+        else if(x4>=70){
+            document.getElementById("bob_mark").innerHTML = 4;
+        }
+        else if(x4>=60){
+            document.getElementById("bob_mark").innerHTML = 3.50;
+        }
+        else if(x4>=50){
+            document.getElementById("bob_mark").innerHTML =3.00;
+        }
+        else if(x4>=40){
+            document.getElementById("bob_mark").innerHTML = 2.00;
+        }
+        else if(x4>=33){
+            document.getElementById("bob_mark").innerHTML =1.00;
+        }else{
+            document.getElementById("bob_mark").innerHTML = 0;        
+        }
+       
+       
+        if(x5>=80){
+            document.getElementById("religion_mark").innerHTML = 5;
+        }
+        else if(x5>=70){
+            document.getElementById("religion_mark").innerHTML = 4;
+        }
+        else if(x5>=60){
+            document.getElementById("religion_mark").innerHTML = 3.50;
+        }
+        else if(x5>=50){
+            document.getElementById("religion_mark").innerHTML =3.00;
+        }
+        else if(x5>=40){
+            document.getElementById("religion_mark").innerHTML = 2.00;
+        }
+        else if(x5>=33){
+            document.getElementById("religion_mark").innerHTML =1.00;
+        }else{
+            document.getElementById("religion_mark").innerHTML = 0;        
+        }
+       
+
+
         }
     </script>
 </body>
