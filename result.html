@@ -59,6 +59,8 @@
                 <th>Religion</th>
                 <th>Total Mark</th>
                 <th>Average_mark</th>
+                <th>GPA</th>
+                <th>Grade</th>
                
             </tr>
             <tr class="text-center">
@@ -71,6 +73,8 @@
                 <td id="religion_mark"></td>
                 <td id="total_mark"></td>
                 <td id="avarage_Mark1"></td>
+                <td id="gpa"></td>
+                <td id="grade"></td>
                 
             </tr>
         </table>
@@ -86,11 +90,12 @@
         var x5 = Number(document.getElementById('inputMark5').value);
        
         var total = Number(x + x1 + x2 + x3 + x4 + x5);
-        var average_mark = total/6;
+        var average_mark = Number(total/6);
+        var cut_average = average_mark.toFixed(2);
         
         document.getElementById("name").innerHTML = name;
         document.getElementById("total_mark").innerHTML = total;
-        document.getElementById("avarage_Mark1").innerHTML = average_mark;
+        document.getElementById("avarage_Mark1").innerHTML = cut_average;
 
         if(x>=80){
             document.getElementById("bangla_mark").innerHTML = 5;
@@ -223,7 +228,47 @@
             document.getElementById("religion_mark").innerHTML = 0;        
         }
        
+        if(average_mark>=80){
+            document.getElementById("gpa").innerHTML = 5;
+        }
+        else if(average_mark>=70){
+            document.getElementById("gpa").innerHTML = 4;
+        }
+        else if(average_mark>=60){
+            document.getElementById("gpa").innerHTML = 3.50;
+        }
+        else if(average_mark>=50){
+            document.getElementById("gpa").innerHTML =3.00;
+        }
+        else if(average_mark>=40){
+            document.getElementById("gpa").innerHTML = 2.00;
+        }
+        else if(average_mark>=33){
+            document.getElementById("gpa").innerHTML =1.00;
+        }else{
+            document.getElementById("gpa").innerHTML = 0;        }
 
+
+        if(average_mark>=80){
+            document.getElementById("grade").innerHTML = "A+";
+        }
+        else if(average_mark>=70){
+            document.getElementById("grade").innerHTML = "A-";
+        }
+        else if(average_mark>=60){
+            document.getElementById("grade").innerHTML = "A";
+        }
+        else if(average_mark>=50){
+            document.getElementById("grade").innerHTML ="B";
+        }
+        else if(average_mark>=40){
+            document.getElementById("grade").innerHTML ="C";
+        }
+        else if(average_mark>=33){
+            document.getElementById("grade").innerHTML ="D";
+        }else{
+            document.getElementById("grade").innerHTML = "F";        }
+       
 
         }
     </script>

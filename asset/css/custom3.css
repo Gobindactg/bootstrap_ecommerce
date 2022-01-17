@@ -1,0 +1,76 @@
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #ffc451;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd584;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.back_style{
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.nav_style li a{
+    color: white;
+}
+.get_btn{
+    color: #fff;
+    border-radius: 4px;
+    padding: 7px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid #ffc451;
+    justify-content: end;
+}
+.get_btn:hover {
+    background: #ffbb38;
+    color: #343a40;
+  }
+
+@media screen and (max-width:991px) {
+    .get_btn{
+        padding: 7px 20px 8px 20px;
+       justify-content: flex-end;
+       position: fixed;
+       left: 50%;
+       top: 10px;
+       
+        
+      }
+    }
+.hover_color ul li a:hover{
+    color: #ffbb38;
+}
+.hover_color ul li a{
+    font-family: "Open Sans", sans-serif;
+} 
+.brand_color{
+    color:#ffbb38;
+}
+.brand_name{
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
