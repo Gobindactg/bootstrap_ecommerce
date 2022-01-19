@@ -2,72 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="asset/remixicon/remixicon.css">
-    <link rel="stylesheet" href="asset/css/portfolio_3.css">
-    <title>Portfolio Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="asset/remixicon/remixicon.css">
+  <link rel="stylesheet" href="asset/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" href="asset/css/project_3.css">
+  <title>My Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg nav_bg">
-        <div class="container ">
-            <a class="navbar-brand brand" href="#">Gp<span class="dot">.</span></a>
-            <button class="navbar-toggler navbar-dark button_end" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon justify-content-end"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav nav_hover">
-                    <li class="nav-item px-2">
-                        <a class="nav-link " href="#">Home</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" aria-current="page" href="#">About</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active text" aria-current="page" href="#">Services</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active textria-current=" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active text" aria-current="page" href="#">Team</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link active text" aria-current="page" href="#">Drop Down</a>
-                        <ul class="sub_nav">
-                            <li class="nav-item"><a class="nav-link" href="#">Drop Down</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Drop Down</a>
-                                <ul class="sub_nav2">
-                                    <li class="nav-item"><a class="nav-link" href="#">Drop Down</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Drop Down</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Drop Down</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Drop Down</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Drop Down</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Drop Down</a></li>
-                        </ul>
-                    </li>
+  <!-- start navbar -->
 
-                    <li class="nav-item px-2">
-                        <a class="nav-link " aria-current="page" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            
+  <nav class="navbar navbar-expand-lg  back_style">
+    <div class="container ">
+      <h1 class="navbar-brand brand_name" href="#">Gp<span class="brand_color">.</span></h1>
+      <button class="navbar-toggler navbar-dark text-light" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse  justify-content-center" id="navbarSupportedContent">
+        <div class="hover_color">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav_style">
+            <li class="nav-item "><a href="" class="nav-link active">Home</a></li>
+            <li class="nav-item "><a href="" class="nav-link">About</a></li>
+            <li class="nav-item "><a href="" class="nav-link">Features</a></li>
+            <li class="nav-item "><a href="" class="nav-link">Pricing</a></li>
+            <li class="nav-item "><a href="" class="nav-link">Team</a></li>
+            <li class="nav-item "><a href="" class="nav-link">Gallery</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item "><a href="" class="nav-link">Contact</a></li>
+          </ul>
         </div>
-    </nav>
-    <div class="container text-end get_button">
-        <a href="#about" class="btn ">Get Started</a>
+      </div>
+      <a class="btn  get_btn " href="#">Get Start</a>
     </div>
-   <!-- start hero section -->
-  <section id="" class="d-flex align-items-center justify-content-center hero">
+
+  </nav>
+  <!-- start hero section -->
+  <div class="hero">
+    <div class="row ">
+      <div class="col-md-12 justify-content-center  hero_text">
+        <h1 class="text-center text-light">Powerful Digital Solutions With Gp<span>.</span></h1>
+        <h2 class="text-center text-light">We are team of talented digital marketers</h2>
+      </div>
+    </div>
+    <div class="row gy-4 mt-5 justify-content-center simple" data-aos="zoom-in" data-aos-delay="250">
+      <div class="col-xl-2 col-md-4 box_border">
+        <div class="icon-box">
+          <i class="ri-store-line"></i>
+          <h3><a href="">Lorem Ipsum</a></h3>
+        </div>
+      </div>
+      <div class="col-xl-2 col-md-4 box_border">
+        <div class="icon-box">
+          <i class="ri-bar-chart-box-line"></i>
+          <h3><a href="">Dolor Sitema</a></h3>
+        </div>
+      </div>
+      <div class="col-xl-2 col-md-4 box_border">
+        <div class="icon-box">
+          <i class="ri-calendar-todo-line"></i>
+          <h3><a href="">Sedare Perspiciatis</a></h3>
+        </div>
+      </div>
+      <div class="col-xl-2 col-md-4 box_border">
+        <div class="icon-box">
+          <i class="ri-paint-brush-line"></i>
+          <h3><a href="">Magni Dolores</a></h3>
+        </div>
+      </div>
+      <div class="col-xl-2 col-md-4 box_border">
+        <div class="icon-box">
+          <i class="ri-database-2-line"></i>
+          <h3><a href="">Nemos Enimade</a></h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end hero section -->
+  <!-- start about section -->
+  <div class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          <img src="asset/img1/about.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+          <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore
+            magna aliqua.
+          </p>
+          <ul class="line_style">
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</li>
+            <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate
+              velit.</li>
+            <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+              mastiro dolore eu fugiat nulla pariatur.</li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end about section -->
+  <!-- ======= Clients Section ======= -->
+
+  <div class="container section_client">
+    <div class="row">
+      <div class="col-md-2 client_img"><img src="asset/img1/clients/client-1.png" alt=""></div>
+      <div class="col-md-2 client_img"><img src="asset/img1/clients/client-2.png" alt=""></div>
+      <div class="col-md-2 client_img"><img src="asset/img1/clients/client-3.png" alt=""></div>
+      <div class="col-md-2 client_img"><img src="asset/img1/clients/client-4.png" alt=""></div>
+      <div class="col-md-2 client_img"><img src="asset/img1/clients/client-5.png" alt=""></div>
+      <div class="col-md-2 client_img"><img src="asset/img1/clients/client-6.png" alt=""></div>
+    </div>
+  </div>
+  <!-- End Clients Section -->
+<!--  Features Section -->
+  <div class="container feature " data-aos="fade-up">
+
+    <div class="row">
+      <div class="image col-md-6 feature_col" style='background-image: url("asset/img1/features.jpg");' data-aos="fade-right"></div>
+      <div class="col-lg-6 feature_col" data-aos="fade-left" data-aos-delay="100">
+        <div class="col-md-12" data-aos="zoom-in" data-aos-delay="150">
+          <i class="bx bx-receipt"></i>
+          <h4>Est labore ad</h4>
+          <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+        </div>
+        <div class="col-md-12" data-aos="zoom-in" data-aos-delay="150">
+          <i class="bx bx-cube-alt"></i>
+          <h4>Harum esse qui</h4> x
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+        </div>
+        <div class="col-md-12" data-aos="zoom-in" data-aos-delay="150">
+          <i class="bx bx-images"></i>
+          <h4>Aut occaecati</h4>
+          <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+        </div>
+        <div class="col-md-12" data-aos="zoom-in" data-aos-delay="150">
+          <i class="bx bx-shield"></i>
+          <h4>Beatae veritatis</h4>
+          <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Features Section -->
+  <!-- End Clients Section -->
+  <!-- end navbar -->
+  <!-- ======= Hero Section ======= -->
+  <!-- <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-up">
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
@@ -111,31 +225,10 @@
       </div>
 
     </div>
-  </section>
-  <!-- End Hero -->
-  <!-- start client Secction -->
-  <section id="clients" class="clients">
-    <div class="container" data-aos="zoom-in">
+  </section>End Hero -->
 
-      <div class="clients-slider swiper">
-        <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><img src="asset/img2/clients/client-1.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="asset/img2/clients/client-2.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="asset/img2/clients/client-3.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="asset/img2/clients/client-4.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="asset/img2/clients/client-5.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="asset/img2/clients/client-6.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="asset/img2/clients/client-7.png" class="img-fluid" alt=""></div>
-          <div class="swiper-slide"><img src="asset/img2/clients/client-8.png" class="img-fluid" alt=""></div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
 
-    </div>
-  </section><!-- End Clients Section -->
-  <!-- end client section -->
-
-        <script src="asset/js/bootstrap.min.js"></script>
+  <script src="asset/js/bootstrap.min.js"></script>
 </body>
 
 </html>
