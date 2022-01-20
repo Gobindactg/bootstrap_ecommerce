@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hotel cost calculation </h1>
+        <div class="mb-1">
+            <label for="" class="form-label">Cost 1 - 10 Days </label>
+            <input type="number" class="form-control" id="cost10" value="100" placeholder="100">
+            <div class="mb-1">
+                <label for="" class="form-label">Cost 11- 20 Days </label>
+                <input type="number" class="form-control" id="cost20" value="80" placeholder="80">
+            </div>
+            <div class="mb-1">
+                <label for="" class="form-label">Cost 21 to untill </label>
+                <input type="number" class="form-control" id="cost30" value="50" placeholder="50">
+            </div>
+
+            <label for="" class="form-label">Day</label>
+            <input type="number" class="form-control" id="stay">
+        </div>
+        <div class="mb-1 py-2">
+            <button type="button" onclick="myFunction()" class="btn btn-info btn-lg" data-toggle="modal"
+                data-target="#myModal">Submit</button>
+        </div>
+
+    </div>
+
+
+    <!-- ======== -->
+    
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Hotel Cost Calculation</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th class="text-center" style="font-size: 20px;"> Stay Day </th>
+                            <th class="text-center"> Cost Per Day</th>
+                            <th class="text-center"> Total Cost</th>
+                        </tr>
+                        <tr class="text-dark">
+                            <td id="s_day" class="text-center" style="font-size: 17px;"> </td>
+                            <td class="text-start" style="margin: 0; padding: 0;"> 
+                                <table class="table table-bordered" style="margin: 0; padding: 0;">
+                                    <tr>
+                                        <th>1st 10 days</th>
+                                    </tr>
+                                    <tr>
+                                        <th>2nd 10 days</th>
+                                    </tr>
+                                    <tr>
+                                        <th>20 days more </th>
+                                    </tr>
+                                </table>
+                               
+
+                            </td>
+                            <td class="text-start" style="margin: 0; padding: 0;"> 
+                                <table class="table table-bordered" style="margin: 0; padding: 0;">
+                                    <tr>
+                                        <th id="cost10Day" class="text-center">00</th>
+                                    </tr>
+                                    <tr>
+                                        <th id="cost20Day" class="text-center">00</th>
+                                    </tr>
+                                    <tr>
+                                        <th id="cost30Day" class="text-center">00</th>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="text-dark">
+                            <td colspan="2" id="s_day" class="text-center" style="font-size: 25px;"> Grand Total Cost</td>
+                            <td id="g_cost" style="font-size: 25px;"class="text-center"> </td>
+                        </tr>
+                    </table>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" onclick="functionPrint()" data-dismiss="modal">Print</button>
+                    <button onclick="window.print()" type="button" class="btn btn-default" data-dismiss="modal">Print </button>
+                    <button type="button" class="btn  btn-outline-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- ======= -->
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = Number(document.getElementById("cost10").value);
+            var y = Number(document.getElementById("cost20").value);
+            var z = Number(document.getElementById("cost30").value);
+
+            var stays = Number(document.getElementById("stay").value);
+
+            if (stays <= 10) {
+                cost = stays * x;
+                cost1 = cost;
+                cost2 = "00";
+                cost3 = "00";
+            }
+            
+            else if (stays <= 20) {
+                p = stays - 10;
+                cost = 10 * x + p * y;
+                cost1 =  10 * x;
+                cost2 = p * y;
+                cost3 = "00";
+            }
+            else if (stays > 20) {
+                c = stays - 20;
+                cost = 10 * x + 10 * y + c * z;
+                p = stays - 10 - c;
+                cost1 = 10 * x;
+                cost2 = p * y;
+                cost3 = c * z;
+            }
+            
+            document.getElementById("s_day").innerHTML = stays + " Days ";
+            document.getElementById("g_cost").innerHTML = cost;
+           // document.getElementById("show").innerHTML = cost;/
+            document.getElementById("cost10Day").innerHTML = cost1;
+            document.getElementById("cost20Day").innerHTML = cost2;
+            document.getElementById("cost30Day").innerHTML = cost3;
+            
+            // document.getElementById("cost10Day").innerHTML = "1st 10 days = " + x + " BDT per day" + "<br>" + "2nd 10 days = " + y + " BDT per day" + "<br>" + "20 days more = " + z + " BDT per day";
+
+        }
+
+        // function functionPrint() {
+        // document.getElementById("myModal").className += "Print";
+        // window.print();
+   
+    </script>
+</body>
+
+</html>
