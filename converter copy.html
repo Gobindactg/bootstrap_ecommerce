@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <title>javaScript_project</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="mb-1" style="padding-top: 20px;">
+                <label for="" class="form-label">Input Your Value</label>
+                <select name="" id="convert">
+                    <option value="">-- Select Convert Method --</option>
+                    <option value="1000"  >Meter</option>
+                    <option value=".001" >Kilometer</option>
+                    <option value="100">Meter</option>
+                </select>
+                <input type="number" class="form-control" id="input_value">
+            </div>
+            <div class="mb-1" id="meter">
+                <label for="" class="form-label">Select Option</label>
+                <select name="" id="convert">
+                    <option value="">-- Select Convert Method --</option>
+                    <option value="1000"  >Meter</option>
+                    <option value=".001" >Kilometer</option>
+                    <option value="100">Meter</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="myFunction()" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal">
+                Open modal
+            </button>
+
+        </form>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                   <h3 id="print_data" class="text-center"></h3>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = Number(document.getElementById("input_value").value);
+            var meter = document.getElementById("convert").value;
+            var Kilometer = document.getElementById("convert").value;
+
+            if(meter>0){
+                result= x*meter;
+            } 
+            
+            else{
+                result = "enter your value";
+            }
+                 document.getElementById("print_data").innerHTML = result;     
+        }
+
+    </script> 
+
+
+</body>
+
+</html>

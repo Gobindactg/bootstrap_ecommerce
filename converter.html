@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <title>javaScript_project</title>
+</head>
+
+<body>
+    <div class="container" style="margin: 0 auto; width: 50%;" >
+     
+        <div class="col-md-3 py-4"></div>
+        <div class="col-md-12 well justify-content-center" >
+            <h3 class="text-primary">assignment</h3>
+           
+            <div class="col-md-12 justify-content-center">
+                <h4>Converter</h4>
+                <div class="form-group">
+                    <select onchange="converter(); Calculate()" class="form-control" id="converter" style="width:100%;">
+                        <option value="">-- Select Convert Option --</option>
+                        <option value="Kilometer">Kilometer</option>
+                        <option value="Meter">Meter</option>
+                        <option value="kg">Kg</option>
+                        <option value="Gram">Gram</option>
+                        <option value="Mile">Mile</option>
+                        
+                    </select>
+                    <br />
+                    <input type="number" oninput="Calculate()" class="form-control" id="value1"/>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label>Result</label>
+                    <input type="text" class="form-control" id="value2" />
+                </div>
+            </div>
+        </div>
+   
+
+
+
+        <div class=" py-1"  >
+     
+            <div class="col-md-3 py-4"></div>
+            <div class="col-md-12 well justify-content-center" >
+                <h3 class="text-primary">assignment</h3>
+               
+                <div class="col-md-12 justify-content-center">
+                    <h4>Converter In Taka</h4>
+                    <div class="form-group">
+                        <select onchange="currency(); Calculate1()" class="form-control" id="converter1" style="width:100%;">
+                            <option value="">-- Select Convert Option --</option>
+                            <option value="Dollar">Dollar</option>
+                            <option value="Pound">Pound</option>
+                            <option value="Euro">Euro</option>
+                            <option value="Yen">Yen</option>
+                            <option value="Yuan">Yuan</option>
+                            
+                        </select>
+                        <br />
+                        <input type="number" oninput="Calculate1()" class="form-control" id="value3"/>
+                    </div>
+                    <br />
+                    <div class="form-group ">
+                        <label>Result</label>
+                        <input type="text" class="form-control" id="value4" />
+                    </div>
+                </div>
+            </div>
+    <script>
+        function converter(){
+            y = document.getElementById("converter").value;
+            return y;
+        }
+        
+        function Calculate(){
+            y = converter();
+            
+            x = document.getElementById("value1").value;
+            
+            if(x == ""){
+                document.getElementById("value2").value = "";
+            }else{
+                switch(y){
+                    case "Kilometer":
+                        document.getElementById("value2").value = x * 1000  + " "+ "meter " ;
+                    break;
+                    
+                    case "Meter":
+                        document.getElementById("value2").value = x / 1000  + " "+ " Kilometer ";
+                    break;
+                    
+                    case "kg":
+                        document.getElementById("value2").value = x * 1000  + " "+ " Gram " ;
+                    break;
+                    
+                    case "Gram":
+                        document.getElementById("value2").value = x / 1000  + " "+ " Kg ";
+                    break;
+                    
+                    case "Mile":
+                        document.getElementById("value2").value = x * 1.6 + " "+ " Kilometer ";
+                    break;
+                }
+            }
+        }
+
+// ----------------------------
+
+        function Currency(){
+		y = document.getElementById("converter1").value;
+		return y;
+	}
+	
+	function Calculate1(){
+		y = Currency();
+		
+		x = document.getElementById("value3").value;
+		
+		if(x == ""){
+			document.getElementById("value4").value = "";
+		}else{
+			switch(y){
+				case "Dollar":
+					document.getElementById("value4").value = x * 86.15;
+				break;
+				
+				case "Pound":
+					document.getElementById("value4").value = x * 116.82;
+				break;
+				
+				case "Euro":
+					document.getElementById("value4").value = x * 97.64;
+				break;
+				
+				case "Yen":
+					document.getElementById("value4").value = x * 0.76;
+				break;
+				
+				case "Yuan":
+					document.getElementById("value4").value = x * 13.59;
+				break;
+			}
+		}
+	}
+    </script>
+
+</body>
+
+</html>
