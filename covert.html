@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Convert Kilimeter To Meter</h1> 
+         <div class="mb-1" >
+             <label for="" class="form-label">Kilimeter</label>
+             <input type="number" class="form-control" id="kilometer">
+         <div class="mb-1" >
+             <label for="" class="form-label">Meter</label>
+             <input type="number" class="form-control" id="meter">
+         </div>
+         <div class="mb-3">
+            <button onclick="myFunction()"  class="btn btn-outline-primary">Submit</button>
+        </div>
+        <div class="mb-4">
+            <p id="show" class="text-dark"></p>
+        </div>
+     </div>
+<script>
+    function myFunction(result){
+        var x = document.getElementById("kilometer").value;
+        var y = document.getElementById("meter").value;
+        var result = x * 1000;
+        return result;
+    }
+    var result1 = myFunction(result);
+    document.getElementById("show").innerHTML= result1;
+ 
+</script>
+
+</body>
+</html>

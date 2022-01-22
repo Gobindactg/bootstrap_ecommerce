@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <script src="asset/js/bootstrap.bundle.js"></script>
+    <title>Salary Calculation</title>
+</head>
+<body>
+    <div class="container py-3">
+        <h2 class="py-2"> Salary Calculation Calculator</h2>
+        <div class="mb-1" >
+            <label for="" class="form-label">Enter Basic Salary</label>
+            <input onchange="myFunction()" type="number" class="form-control" id="salary">
+        </div>
+        <div>
+            <table class="table table-bordered">
+                <tr>
+                    <th style="width: 50%;" class="text-start">Description </th>
+                    <th class="text-center"> Salary</th>
+                </tr>
+                <tr>
+                    <td>Basic Salary</td>
+                    <td class="text-center" id="basic">00</td>
+                </tr>
+                <tr>
+                    <td>House Rent</td>
+                    <td class="text-center" id="rent">00</td>
+                </tr>
+                <tr>
+                    <td>Medical</td>
+                    <td class="text-center" id="medical">00</td>
+                </tr>
+                <tr>
+                    <td>Tiffin</td>
+                    <td class="text-center" id="tiffin">00</td>
+                </tr>
+                <tr>
+                    <td>Transport</td>
+                    <td class="text-center" id="transport">00</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 900;">Total Salary</td>
+                    <td class="text-center" id="totalSalary" style="font-weight: 900;">00</td>
+                </tr>
+                
+                <tr>
+                    <td >GP Fund</td>
+                    <td class="text-center" id="gpFund">00</td>
+                </tr>
+                <tr>
+                    <td >Welfare Fund</td>
+                    <td class="text-center" id="welfareFund">00</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 900;">Total Reduction</td>
+                    <td class="text-center" id="totalReduction" style="font-weight: 900;">00</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 900;">Net Salary (Total Salary  - Total Reduction) </td>
+                    <td class="text-center" id="netSalary" style="font-weight: 900;">00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var basicSalary = Number(document.getElementById("salary").value);
+          var houseRent = Number(basicSalary * .45);
+          var medical = 1500;
+          var tiffin = 500;
+          var transport = 800;
+          var totalSalary = basicSalary + houseRent + medical + tiffin + transport;
+          var gpFund = basicSalary * .01;
+          var welfareFund = basicSalary * .005; 
+          var totalReduction = gpFund + welfareFund;
+          var netSalary = totalSalary - totalReduction;
+          document.getElementById("basic").innerHTML = basicSalary;
+          document.getElementById("rent").innerHTML = houseRent;
+          document.getElementById("medical").innerHTML = medical;
+          document.getElementById("tiffin").innerHTML = tiffin;
+          document.getElementById("transport").innerHTML = transport;
+          document.getElementById("totalSalary").innerHTML = totalSalary;
+          document.getElementById("gpFund").innerHTML = gpFund;
+          document.getElementById("welfareFund").innerHTML = welfareFund;
+          document.getElementById("totalReduction").innerHTML = totalReduction;
+          document.getElementById("netSalary").innerHTML = netSalary;
+
+        }
+        </script>
+</body>
+</html>
