@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/button_calculator.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <!-- <div class="backgound">
+        <a href="index3.html">Background 1</a>
+        <a href="index1.html">Background 2</a>
+        <a href="index2.html">Background 3</a>
+    </div> -->
+    <div class="container">
+
+        <div class="calculator">
+            <input class="display_number text-primary" type="text" placeholder="0" id="output-screen">
+            <button onclick="Clear()" class="btn-outline-danger">AC</button>
+            <button onclick="del()" class="btn-outline-danger ">DEL</button><br>
+            <button onclick="del()" class="btn-success ">ON</button>
+            <button onclick="display('**')" class="btn-outline-success">^</button>
+            <button onclick="display('%')" class="btn-outline-success">%</button>
+            <button onclick="display('*(')" class="btn-outline-success">(</button>
+            <button onclick="display(')')" class="btn-outline-success">)</button>
+            
+            <button onclick="display('7')" class="btn-outline-success">7</button>
+            <button onclick="display('8')" class="btn-outline-success">8</button>
+            <button onclick="display('9')" class="btn-outline-success">9</button>
+            <button onclick="display('*')" class="btn-outline-success">*</button>
+            <button onclick="display('4')" class="btn-outline-success">4</button>
+            <button onclick="display('5')" class="btn-outline-success">5</button>
+            <button onclick="display('6')" class="btn-outline-success">6</button>
+            <button onclick="display('-')" class="btn-outline-success">-</button>
+            <button onclick="display('1')" class="btn-outline-success">1</button>
+            <button onclick="display('2')" class="btn-outline-success">2</button>
+            <button onclick="display('3')" class="btn-outline-success">3</button>
+            <button onclick="display('+')" class="btn-outline-success">+</button>
+            <button onclick="display('.')" class="btn-outline-success">.</button>
+            <button onclick="display('0')" class="btn-outline-success">0</button>
+            <button onclick="calculate()" class="equal btn-outline-success">=</button>
+            <button onclick="display('/')" class="btn-outline-success">/</button>
+
+        </div>
+    </div>
+    <script>
+        var outputScreen = document.getElementById("output-screen");
+        function display(num) {
+            outputScreen.value += num;
+        }
+        function calculate() {
+            try {
+                outputScreen.value = eval(outputScreen.value);
+            }
+            catch (err) {
+                alert("Invalid");
+            }
+        }
+        function Clear() {
+            outputScreen.value = "";
+        }
+        function del() {
+            outputScreen.value = outputScreen.value.slice(0, -1);
+        }
+    </script>
+</body>
+
+</html>
